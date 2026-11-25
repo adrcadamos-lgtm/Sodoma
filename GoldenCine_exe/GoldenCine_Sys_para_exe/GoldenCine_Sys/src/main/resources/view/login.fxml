@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane styleClass="pantalla" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.LoginController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="360.0" spacing="10.0" styleClass="card">
+         <children>
+            <Label styleClass="card-title" text="Goldencineplanet - Iniciar sesión" />
+            <Label styleClass="field-label" text="Usuario" />
+            <TextField fx:id="txtUsuario" promptText="Usuario" />
+            <Label styleClass="field-label" text="Clave" />
+            <PasswordField fx:id="pwdClave" onAction="#iniciarSesion" promptText="Clave" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#iniciarSesion" styleClass="btn, btn-primary" text="Ingresar" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#accederDirectamente" styleClass="btn, btn-warning" text="Acceder directamente" />
+            <Label fx:id="lbnMsg" maxWidth="1.7976931348623157E308" wrapText="true" />
+            <Label styleClass="field-label" text="Usuario de prueba: admin / admin123" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane styleClass="pantalla" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <VBox spacing="18" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+      <padding><Insets top="20" right="24" bottom="22" left="24" /></padding>
+      <children>
+      <HBox alignment="CENTER_LEFT" spacing="14" styleClass="app-header">
+        <children>
+          <ImageView fitHeight="62" fitWidth="62" preserveRatio="true"><image><Image url="@../img/goldencineplanet-icon.png" /></image></ImageView>
+          <VBox spacing="4"><children><Label styleClass="app-title" text="Goldencineplanet"/><Label styleClass="app-subtitle" text="Grandes historias, siempre aquí · Películas populares"/></children></VBox>
+        </children>
+      </HBox>
+      <Label styleClass="taquilla-heading" text="EN CARTELERA" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" styleClass="taquilla-scroll" VBox.vgrow="ALWAYS">
+        <content>
+          <TilePane alignment="CENTER" hgap="18" vgap="18" prefColumns="5" styleClass="peliculas-grid">
+            <children>
+              <VBox styleClass="pelicula-card"><children><ImageView fitWidth="205" fitHeight="310" preserveRatio="false"><image><Image url="@../img/peliculas/avengers.jpg"/></image></ImageView><Label styleClass="pelicula-titulo" text="Avengers"/></children></VBox>
+              <VBox styleClass="pelicula-card"><children><ImageView fitWidth="205" fitHeight="310" preserveRatio="false"><image><Image url="@../img/peliculas/spiderman-1.jpg"/></image></ImageView><Label styleClass="pelicula-titulo" text="SpiderMan 1"/></children></VBox>
+              <VBox styleClass="pelicula-card"><children><ImageView styleClass="jurassic-poster" fitWidth="205" fitHeight="310" preserveRatio="false"><image><Image url="@../img/peliculas/jurassic-world.jpg"/></image></ImageView><Label styleClass="pelicula-titulo" text="Jurassic World"/></children></VBox>
+              <VBox styleClass="pelicula-card"><children><ImageView fitWidth="205" fitHeight="310" preserveRatio="false"><image><Image url="@../img/peliculas/deadpool.jpg"/></image></ImageView><Label styleClass="pelicula-titulo" text="Deadpool"/></children></VBox>
+              <VBox styleClass="pelicula-card"><children><ImageView fitWidth="205" fitHeight="310" preserveRatio="false"><image><Image url="@../img/peliculas/transformers-rise-of-the-beasts.jpg"/></image></ImageView><Label styleClass="pelicula-titulo" text="Transformers: Rise of the Beasts" wrapText="true"/></children></VBox>
+            </children>
+          </TilePane>
+        </content>
+      </ScrollPane>
+    </children>
+  </VBox>
+  </children>
+</AnchorPane>
+
+
