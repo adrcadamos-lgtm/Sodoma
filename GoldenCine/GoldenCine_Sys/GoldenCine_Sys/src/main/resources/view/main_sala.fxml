@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="miContenedor" styleClass="pantalla" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.SalaController">
+   <children>
+      <VBox spacing="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="app-header">
+               <children>
+                  <VBox spacing="2.0">
+                     <children>
+                        <Label styleClass="app-title" text="Goldencineplanet" />
+                        <Label styleClass="app-subtitle" text="Gestión de Salas" />
+                     </children>
+                  </VBox>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <TextField fx:id="txtFiltroDato" prefWidth="220.0" promptText="Filtrar salas" />
+                  <Button mnemonicParsing="false" styleClass="btn, btn-light" text="Buscar" />
+               </children>
+            </HBox>
+            <HBox spacing="14.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox maxWidth="320.0" minWidth="320.0" prefWidth="320.0" spacing="10.0" styleClass="card">
+                     <children>
+                        <Label styleClass="card-title" text="Registro de Sala" />
+                        <Label styleClass="field-label" text="Nombre de Sala" />
+                        <TextField fx:id="txtNombreSala" promptText="Ej: Sala 5 2D" />
+                        <Label styleClass="field-label" text="Estado de la sala" />
+                        <ToggleButton fx:id="tglEstado" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" styleClass="toggle-estado" text="Libre" />
+                        <HBox spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#validarFormulario" styleClass="btn, btn-success" text="Guardar" />
+                              <Button fx:id="btnCancelar" mnemonicParsing="false" styleClass="btn, btn-warning" text="Cancelar" />
+                           </children>
+                           <padding>
+                              <Insets top="6.0" />
+                           </padding>
+                        </HBox>
+                        <Label fx:id="lbnMsg" maxWidth="1.7976931348623157E308" wrapText="true" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0" styleClass="card" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="card-title" text="Listado de Salas" />
+                        <TableView fx:id="tableView" styleClass="tabla" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
+

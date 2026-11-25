@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="130" viewBox="0 0 140 130">
+ <g stroke="#172235" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Palomitas sobresaliendo de la cubeta -->
+  <path fill="#fff4cf" d="M30 51c-10-7-4-20 7-19 0-12 15-16 22-6 5-14 23-13 27-1 10-9 24 0 19 12 13 2 14 18 2 23H36Z"/>
+  <path fill="#e8b84f" d="M46 41c-7-7 2-15 8-8 1-10 14-10 15 0 7-8 17-1 12 7 7-2 11 8 3 12H52c-7-1-10-6-6-11Z"/>
+  <!-- Cubeta clásica a rayas -->
+  <path fill="#fffefa" d="M25 55h91l-12 68H37Z"/>
+  <path fill="#c8323c" d="M38 58h16l5 62H48Zm32 0h15l-1 62H68Zm31 0h13l-11 62H86Z"/>
+  <path fill="#e4b64f" d="M24 53q0-6 7-6h80q7 0 7 6t-7 6H31q-7 0-7-6Z"/>
+  <path fill="none" d="m57 78 4 4-4 4m26-8-4 4 4 4"/>
+ </g>
+</svg>

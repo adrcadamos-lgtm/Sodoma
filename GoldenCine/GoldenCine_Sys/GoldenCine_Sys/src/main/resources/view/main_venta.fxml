@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane fx:id="miContenedor" styleClass="pantalla" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.VentaController">
+   <children>
+      <VBox spacing="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="app-header">
+               <children>
+                  <VBox spacing="2.0">
+                     <children>
+                        <Label styleClass="brand-mark" text="◈" />
+                        <VBox spacing="2.0">
+                           <children>
+                        <Label styleClass="app-title" text="Goldencineplanet" />
+                              <Label styleClass="app-subtitle" text="Grandes historias, siempre aquí" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Label fx:id="lblVendedor" styleClass="app-subtitle" />
+               </children>
+            </HBox>
+            <HBox spacing="14.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <VBox maxWidth="400.0" minWidth="400.0" prefWidth="400.0" spacing="6.0" styleClass="card">
+                     <children>
+                        <Label styleClass="card-title" text="Cliente" />
+                        <TextField fx:id="txtDniCliente" maxWidth="1.7976931348623157E308" promptText="Escriba el DNI del cliente" />
+                        <Label fx:id="lblDescuentoCliente" maxWidth="1.7976931348623157E308" styleClass="badge-descuento" />
+                        <Label styleClass="card-title" text="Función">
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="cbxFuncion" maxWidth="1.7976931348623157E308" promptText="Seleccione función" />
+                        <HBox spacing="8.0">
+                           <children>
+                              <Label styleClass="field-label" text="Cantidad" />
+                              <TextField fx:id="txtCantFuncion" prefWidth="70.0" />
+                              <Button mnemonicParsing="false" onAction="#elegirAsiento" styleClass="btn, btn-warning" text="Elegir asiento" />
+                              <Button mnemonicParsing="false" onAction="#agregarFuncion" styleClass="btn, btn-primary" text="Agregar entrada" />
+                           </children>
+                        </HBox>
+                        <Label styleClass="card-title" text="Comida">
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </Label>
+                        <ComboBox fx:id="cbxComida" maxWidth="1.7976931348623157E308" promptText="Seleccione producto" />
+                        <Label fx:id="lblInfoComida" maxWidth="1.7976931348623157E308" styleClass="badge-descuento" />
+                        <HBox spacing="8.0">
+                           <children>
+                              <Label styleClass="field-label" text="Cantidad" />
+                              <TextField fx:id="txtCantComida" prefWidth="70.0" />
+                              <Button mnemonicParsing="false" onAction="#agregarComida" styleClass="btn, btn-primary" text="Agregar comida" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="lbnMsg" maxWidth="1.7976931348623157E308" wrapText="true" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="10.0" styleClass="card" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="card-title" text="Carrito de venta" />
+                        <TableView fx:id="tableView" styleClass="tabla" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#quitarSeleccion" styleClass="btn, btn-warning" text="Quitar" />
+                              <Button mnemonicParsing="false" onAction="#vaciarCarrito" styleClass="btn, btn-danger" text="Vaciar" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="lblTotal" styleClass="total-venta" />
+                              <Button mnemonicParsing="false" onAction="#confirmarVenta" styleClass="btn, btn-success" text="Confirmar venta" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
+
+
